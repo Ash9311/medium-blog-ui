@@ -3,11 +3,11 @@ import { Quote } from "../components/Quote"
 
 export const Signup = () => {
     return <>
-        <div className="grid grid-cols-2 sm:flex-row md:flex-col">
+        <div className="grid grid-cols-1 lg:grid-cols-2 ">
             <div>
-                <Auth />
+                <Auth type={"signup"} />
             </div>
-            <div>
+            <div className="hidden lg:block">
                 <Quote />
             </div>
         </div>

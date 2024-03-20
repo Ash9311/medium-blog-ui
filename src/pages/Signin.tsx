@@ -1,5 +1,16 @@
-export const Signin=()=>{
+import { Auth } from "../components/Auth"
+import { Quote } from "../components/Quote"
+
+export const Signin = () => {
     return <>
-        Signin
+        <div className="grid grid-cols-1 lg:grid-cols-2 sm:flex-row md:flex-col">
+            <div>
+                <Auth type={"signin"} />
+            </div>
+            <div className="hidden lg:block">
+                <Quote />
+            </div>
+        </div>
+
     </>
 }
